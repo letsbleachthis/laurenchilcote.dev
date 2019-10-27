@@ -1,0 +1,15 @@
+:root {
+    --spaceSmall: 8px;
+    --spaceMid: 12px;
+    --spaceRegular: 16px;
+    --spaceLarge: 24px;
+    --spaceExtraLarge: 32px;
+    
+    --green: #18a574;
+  }
+  body {
+      color: #333333;
+  }
+  a {
+      /* color: var(--green); */
+  }

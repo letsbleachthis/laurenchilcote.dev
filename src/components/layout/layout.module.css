@@ -1,0 +1,13 @@
+.layoutContainer {
+    margin: 3rem auto;
+    padding: 0 1rem;
+    max-width: 800px;
+}
+.siteTitle {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+}
+.pageTitle {
+    margin-bottom: 3rem;
+}
