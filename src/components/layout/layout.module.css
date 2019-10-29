@@ -11,3 +11,10 @@
 .pageTitle {
     margin-bottom: 3rem;
 }
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+.footer .copyContainer {
+    margin-right: 24px;
+}
