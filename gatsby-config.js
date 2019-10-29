@@ -9,6 +9,8 @@ const { spaceId, accessToken } = process.env;
 module.exports = {
   siteMetadata: {
     title: `Lauren Chilcote`,
+    description: 'Product Design & Front-End Development Portfolio',
+    author: 'Lauren Chilcote',
   },
   plugins: [
     {
