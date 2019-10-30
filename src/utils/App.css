@@ -6,6 +6,8 @@
     --spaceExtraLarge: 32px;
     
     --green: #18a574;
+    --greenHover: #158f64;
+    --white: #ffffff;
     --lightestGrey: #f5f5f5;
     --lightGrey: #e0e0e0;
     --mediumGrey: #b8b8b8;
@@ -19,6 +21,10 @@
   }
   a {
       color: var(--green);
+      transition: color 150ms ease-in;
+  }
+  a:hover {
+      color: var(--greenHover);
   }
   .finePrint {
       color: var(--mediumGrey);

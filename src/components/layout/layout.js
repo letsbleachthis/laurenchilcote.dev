@@ -44,9 +44,25 @@ export default ({ children }) => {
         <p className='finePrint'>Currently working with the fine folks at Buffer to help innovative companies grow their brands online.</p>
         {/* <p>When not in front of my computer, you can find me advocating for the existence of the cake flight, powerlifting with The Armory barbell club, or staring at/petting/fawning over someone’s dog.</p> */}
         <ul className={layoutStyles.socialLinks}>
-          <li className={layoutStyles.twitter}><a href="https://twitter.com/LaurenChilcote" target="_blank">Twitter</a></li>
-          <li className={layoutStyles.linkedIn}><a href="https://www.linkedin.com/in/laurenchilcote/" target="_blank">LinkedIn</a></li>
-          <li className={layoutStyles.gitHub}><a href="https://github.com/letsbleachthis" target="_blank">GitHub</a></li>
+          <li className={`${layoutStyles.iconContainer} ${layoutStyles.twitter}`}>
+            <a className={layoutStyles.socialIcon} href="https://twitter.com/LaurenChilcote" target="_blank">
+              <i className="fa fa-lg fa-twitter"></i>
+              
+            </a>
+          </li>
+          <li className={`${layoutStyles.iconContainer} ${layoutStyles.linkedIn}`}>
+            <a className={layoutStyles.socialIcon} href="https://www.linkedin.com/in/laurenchilcote/" target="_blank">
+              <i className="fa fa-lg fa-linkedin"></i>
+              
+            </a>
+          </li>
+          <li className={`${layoutStyles.iconContainer} ${layoutStyles.gitHub}`}>
+            <a className={layoutStyles.socialIcon} href="https://github.com/letsbleachthis" target="_blank">
+              <i className="fa fa-lg fa-github"></i>
+              
+            </a>
+          </li>
+          <li><Link to="/about/">More about me <i className="fa fa-long-arrow-right"></i></Link></li>
         </ul>
       </div>
       <img src={portrait} alt="A portrait of Lauren Chilcote" className={layoutStyles.portrait}/>
