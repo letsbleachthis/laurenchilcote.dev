@@ -6,10 +6,20 @@
     --spaceExtraLarge: 32px;
     
     --green: #18a574;
+    --lightestGrey: #f5f5f5;
+    --lightGrey: #e0e0e0;
+    --mediumGrey: #b8b8b8;
+    --darkGrey: #636363;
+    --darkerGrey: #ed3d3d;
+    --black: #333333;
+
   }
   body {
-      color: #333333;
+      color: var(--black);
   }
   a {
-      /* color: var(--green); */
+      color: var(--green);
+  }
+  .finePrint {
+      color: var(--mediumGrey);
   }
