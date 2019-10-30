@@ -16,7 +16,7 @@
     flex-direction: row;
     margin-top: 2rem;
     padding-top: 3rem;
-    border-top: 1px solid lightgrey;
+    border-top: 1px solid var(--lightGrey);
 }
 .footer .copyContainer {
     margin-right: 24px;
