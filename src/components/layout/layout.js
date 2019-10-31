@@ -1,8 +1,8 @@
 import React from "react"
 import { useStaticQuery, Link, graphql  } from "gatsby"
 
+import "./layout.css"
 import layoutStyles from "./layout.module.css"
-import "../../utils/App.css"
 import portrait from "../../images/img_lauren_chilcote_crop.jpeg"
 
 const ListLink = props => (
@@ -62,7 +62,7 @@ export default ({ children }) => {
               
             </a>
           </li>
-          <li><Link to="/about/">More about me <i className="fa fa-long-arrow-right"></i></Link></li>
+          <li><Link to="/about/">Find out more <i className="fa fa-long-arrow-right"></i></Link></li>
         </ul>
       </div>
       <img src={portrait} alt="A portrait of Lauren Chilcote" className={layoutStyles.portrait}/>
