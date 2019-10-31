@@ -15,17 +15,35 @@
     --darkerGrey: #ed3d3d;
     --black: #333333;
 
+    --primaryColor: #0b4744;
+    --secondaryColor: #bcb74c;
+    --tertiaryColor: #c76a9d;
+    --tertiaryColor-0: #f1ebfa;
+    --tertiaryColor-dark: #b73e80;
+
+    --neutral: #e6cfbc;
+
   }
   body {
-      color: var(--black);
+      font-family: "Open Sans", "Helvetiva", "Arial", sans-serif;
+      font-weight: 400;
+      font-size: 1.15rem;
+      line-height: 2rem;
+      background: var(--primaryColor);
+      color: var(--white);
+      /* color: #e7f1da; */
   }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", "Open Sans", "Helvetiva", "Arial", sans-serif;
+    font-weight: 700;
+    line-height: 3rem;
+    color: var(--secondaryColor);
+}
   a {
-      color: var(--green);
+      color: var(--tertiaryColor);
+      text-decoration: none;
       transition: color 150ms ease-in;
   }
   a:hover {
-      color: var(--greenHover);
-  }
-  .finePrint {
-      color: var(--mediumGrey);
+      color: var(--tertiaryColor-0);
   }
