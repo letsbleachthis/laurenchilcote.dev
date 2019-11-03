@@ -4,46 +4,74 @@
     --spaceRegular: 16px;
     --spaceLarge: 24px;
     --spaceExtraLarge: 32px;
+
+    --fontHeadings: "Poppins", "Open Sans", "Helvetiva", "Arial", sans-serif;
+    --fontBody: "Open Sans", "Helvetiva", "Arial", sans-serif;
     
-    --green: #18a574;
-    --greenHover: #158f64;
     --white: #ffffff;
-    --lightestGrey: #f5f5f5;
-    --lightGrey: #e0e0e0;
-    --mediumGrey: #b8b8b8;
-    --darkGrey: #636363;
-    --darkerGrey: #ed3d3d;
+    --grey-0: #f0f0f0;
+    --grey-1: #f5f5f5;
+    --grey-2: #e0e0e0;
+    --grey-3: #b8b8b8;
+    --grey-4: #636363;
     --black: #333333;
 
     --primaryColor: #0b4744;
     --secondaryColor: #bcb74c;
     --tertiaryColor: #c76a9d;
-    --tertiaryColor-0: #f1ebfa;
-    --tertiaryColor-dark: #b73e80;
-
-    --neutral: #e6cfbc;
-
+  }
+  html {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
   }
   body {
-      font-family: "Open Sans", "Helvetiva", "Arial", sans-serif;
+      font-family: var(--fontBody);
       font-weight: 400;
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       line-height: 2rem;
-      background: var(--primaryColor);
-      color: var(--white);
-      /* color: #e7f1da; */
+      background: var(--white);
+      color: var(--black);
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Poppins", "Open Sans", "Helvetiva", "Arial", sans-serif;
+    font-family: var(--fontHeadings);
     font-weight: 700;
     line-height: 3rem;
+    color: var(--primaryColor);
+}
+a {
+    color: var(--tertiaryColor);
+    text-decoration: none;
+    transition: color 150ms ease-in;
+}
+a:hover {
+    color: var(--tertiaryColor-dark);
+}
+.section {
+    padding: 2rem 0 5rem;
+    width: 100%;
+}
+.sectionPrimary {
+    position: relative;
+    background: var(--primaryColor);
+    color: var(--white);
+}
+.sectionPrimary::after { 
+    position: absolute;
+    bottom: -50px;
+    left: 0px;
+    width: 100%;
+    content:" ";
+    background: radial-gradient(circle at 50% 0%, var(--primaryColor) 25%, var(--white) 26%, var(--white) 40%);
+    background-color: var(--primaryColor);
+    background-size: 50px 100px;
+    height: 50px;
+    background-repeat: repeat-x;
+  }
+.sectionPrimary h1 {
     color: var(--secondaryColor);
 }
-  a {
-      color: var(--tertiaryColor);
-      text-decoration: none;
-      transition: color 150ms ease-in;
-  }
-  a:hover {
-      color: var(--tertiaryColor-0);
-  }
+.wrapper {
+    margin: 0 auto;
+    width: 750px;
+}
