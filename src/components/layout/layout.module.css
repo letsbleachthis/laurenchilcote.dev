@@ -4,11 +4,7 @@
     width: 100%;
 }
 .mainNav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: 600;
+    padding: 2rem 0 0;
     background: var(--primaryColor);
     width: 100%;
 }
@@ -18,7 +14,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 1000px;
+    max-width: 75vw;
 }
 .mainNavLinks {
     list-style-type: none;
@@ -27,32 +23,33 @@
     align-items: center;
 }
 .mainNavLinks a {
-    margin: 0 var(--spaceRegular);
-    font-size: .85rem;
+    margin: 0 1rem;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--white);
 }
 .siteTitle {
     color: var(--tertiaryColor);
     font-weight: 600;
+    text-transform: none;
+    letter-spacing: initial;
 }
 .footer {
     margin-top: 2rem;
-    padding-top: 3rem;
     background: var(--white);
     width: 100%;
 }
 .footerWrapper {
-    padding: 0 0 3rem;
+    padding: 3rem 0;
     margin: 0 auto;
-    width: 800px;
+    max-width: 60vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 .footer .copyContainer {
-    margin-right: var(--spaceLarge);
+    margin-right: 30px;
 }
 .footer .portraitContainer {
     width: 210px;
