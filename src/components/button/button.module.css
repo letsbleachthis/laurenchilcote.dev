@@ -1,0 +1,8 @@
+.button {
+    margin: var(--spaceLarge) var(--spaceSmall);
+    padding: var(--spaceLarge) var(--spaceRegular);
+    color: var(--white);
+    background: #000000;
+    border-radius: 2px;
+    border: 0;
+}
