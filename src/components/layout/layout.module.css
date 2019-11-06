@@ -95,7 +95,7 @@
 }
 .copyrightContainer {
     padding: 3rem 0;
-    background: var(--tertiaryColor);
+    background: var(--primaryColor);
     color: var(--white);
     text-align: center;
     font-size: .75rem;
