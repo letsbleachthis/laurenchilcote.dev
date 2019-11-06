@@ -74,7 +74,7 @@ export default ({ children }) => {
           </div>
         </div>
         <div className={layoutStyles.copyrightContainer}>
-          <p>Copyright 2019</p>
+          <p>&copy; Lauren Chilcote 2019</p>
         </div>
     </footer>
   </div>

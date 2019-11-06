@@ -94,8 +94,10 @@
 }
 .copyrightContainer {
     padding: 3rem 0;
-    background: var(--primaryColor);
-    color: var(--white);
+    border-top: 1px solid var(--grey-2);
     text-align: center;
+}
+.copyrightContainer p {
     font-size: .75rem;
+    color: var(--grey-3);
 }
