@@ -83,8 +83,7 @@
     transition: all 150ms ease-in;
 }
 .socialLinks .iconContainer:hover {
-    background: #c76a9d;
-    color: var(--tertiaryColor);
+    background: var(--tertiaryColor-hint);
 }
 .socialIcon {
     color: var(--white);

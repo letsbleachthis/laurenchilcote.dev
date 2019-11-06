@@ -10,7 +10,7 @@
     --color-disabled-text-dark: #4a4a4a;
 
     --color-primary-light: var(--tertiaryColor);
-    --color-secondary-light: var(--secondaryColor);
+    --color-secondary-light: var(--tertiaryColor-hint);
     --color-disabled-light: #9b9b9b;
 
     font-size: 1rem;
@@ -35,7 +35,7 @@
   .button--tertiary {
     border: 2px solid transparent;
     width: 120px;
-    padding: 10px 0px !important;
+    padding: .75rem 0 !important;
     background: none;
   }
   
@@ -95,7 +95,7 @@
   .button--light.button--primary:focus,
   .button--light.button--secondary:focus {
     outline: 2px solid var(--color-secondary-light);
-    outline-offset: 4px;
+    outline-offset: .25rem;
   }
   
   .button--light.button--secondary {
