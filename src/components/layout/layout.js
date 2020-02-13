@@ -37,45 +37,45 @@ export default ({ children }) => {
           <ListLink to="/">Work</ListLink>
           <ListLink to="/">Writing</ListLink>
           <ListLink to="/about/">About</ListLink>
-          <ListLink to="/contact/">Contact</ListLink>
         </ul>
       </div>
     </header>
     {children}
     <footer className={layoutStyles.footer}>
     <div className={layoutStyles.footerWrapper}>
+      
       <div className={layoutStyles.copyContainer}>
-            <h4>Lauren Chilcote</h4>
-            <p>Digital Product Designer, powerlifter, and doggo enthusiast. Currently working with the fine folks at Buffer to help innovative companies grow their brands online.</p>
-            <ul className={layoutStyles.socialLinks}>
-              <li className={`${layoutStyles.iconContainer} ${layoutStyles.twitter}`}>
-                <a className={layoutStyles.socialIcon} href="https://twitter.com/LaurenChilcote" target="_blank">
-                  <i className="fa fa-lg fa-twitter"></i>
-                  
-                </a>
-              </li>
-              <li className={`${layoutStyles.iconContainer} ${layoutStyles.linkedIn}`}>
-                <a className={layoutStyles.socialIcon} href="https://www.linkedin.com/in/laurenchilcote/" target="_blank">
-                  <i className="fa fa-lg fa-linkedin"></i>
-                  
-                </a>
-              </li>
-              <li className={`${layoutStyles.iconContainer} ${layoutStyles.gitHub}`}>
-                <a className={layoutStyles.socialIcon} href="https://github.com/letsbleachthis" target="_blank">
-                  <i className="fa fa-lg fa-github"></i>
-                  
-                </a>
-              </li>
-              <li><Link to="/about/">Find out more <i className="fa fa-long-arrow-right"></i></Link></li>
-            </ul>
-          </div>
-          <div className={layoutStyles.portraitContainer}>
-            <img src={portrait} alt="A portrait of Lauren Chilcote" className={layoutStyles.portrait}/>
-          </div>
+        <div className={layoutStyles.portraitContainer}>
+          <img src={portrait} alt="A portrait of Lauren Chilcote" className={layoutStyles.portrait}/>
         </div>
-        <div className={layoutStyles.copyrightContainer}>
-          <p>&copy; Lauren Chilcote 2019</p>
-        </div>
+        <div className={layoutStyles.footerBio}>
+          <h4>Lauren Chilcote</h4>
+          <p>Digital Product Designer, powerlifter, and doggo enthusiast. Currently working with the fine folks at Buffer to help innovative companies grow their brands online.</p>
+          <p className={layoutStyles.finePrint}>Site handcrafted by Lauren Chilcote &middot; All Rights Reserved 2020</p>
+        </div>     
+      </div>
+      <div>
+        <h4>Follow Me</h4>
+        <ul className={layoutStyles.socialLinks}>
+          <li className={`${layoutStyles.iconContainer} ${layoutStyles.twitter}`}>
+            <a className={layoutStyles.socialIcon} href="https://twitter.com/LaurenChilcote" target="_blank">
+              <i className="fa fa-lg fa-twitter"></i>
+            </a>
+          </li>
+          <li className={`${layoutStyles.iconContainer} ${layoutStyles.linkedIn}`}>
+            <a className={layoutStyles.socialIcon} href="https://www.linkedin.com/in/laurenchilcote/" target="_blank">
+              <i className="fa fa-lg fa-linkedin"></i>
+            </a>
+          </li>
+          <li className={`${layoutStyles.iconContainer} ${layoutStyles.gitHub}`}>
+            <a className={layoutStyles.socialIcon} href="https://github.com/letsbleachthis" target="_blank">
+              <i className="fa fa-lg fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+          
+    </div>
     </footer>
   </div>
 )

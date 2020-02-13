@@ -13,11 +13,11 @@ export default () => (
 <Layout>
     <div className="section sectionPrimary">
         <div style={{margin: '0 auto', width: '55vw'}}>
-            <Header headerText="Hi! I’m Lauren, a Product Designer &amp; Front-End Developer."/>
-            <p className="sectionDescription">I craft thoughtful solutions to user problems and work cross-functionally to drive products from ideation through implementation. <Link to="/about">The nitty gritty &#10230;</Link></p>
+            <Header headerText="Active Work-in-Progress"/>
+            <p className="sectionDescription">Pardon my appearance as I migrate my personal portfolio. <Link to="/about">Check out my writing &#10230;</Link></p>
         </div>
     </div>
-    <div className="section">
+    {/* <div className="section">
         <div className="wrapper">
             <h3>Featured Work</h3>
             <div className="workMain">
@@ -27,7 +27,7 @@ export default () => (
                     <p>Storyboard your posts, draft captions, and execute on a holistic Instagram strategy with a birds’ eye view of all your content within Publish.</p>
                     <Button
                         size={ButtonSizes.MEDIUM}
-                        label="Learn More"
+                        label="Read the Full Story"
                         theme={ButtonThemes.LIGHT}
                         onClickHandler={() => console.log("you clicked!")}
                         type={ButtonTypes.PRIMARY}
@@ -47,7 +47,7 @@ export default () => (
                 <div className="workItem">
                     <img className="workImage" src={img}></img>
                     <div className="copyContainer">
-                        <h2>Mentoring for new freelance hires.</h2>
+                        <h2>Mentoring new freelance hires.</h2>
                         <p>Setting up folks for success.</p>
                         <Link to="/about">Learn more &#10230;</Link>
                     </div>
@@ -62,14 +62,6 @@ export default () => (
                 </div>
             </div>
         </div>
-    </div>
-
-    <div className="section highlight">
-        <div className="wrapper">
-            <h3>Writing</h3>
-        
-        </div>
-    
-    </div>
+    </div> */}
 </Layout>
 )

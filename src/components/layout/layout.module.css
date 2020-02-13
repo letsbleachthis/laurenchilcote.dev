@@ -4,7 +4,7 @@
     width: 100%;
 }
 .mainNav {
-    padding: 2rem 0 0;
+    padding: 2rem 0;
     background: var(--primaryColor);
     width: 100%;
 }
@@ -25,8 +25,7 @@
 .mainNavLinks a {
     margin: 0 1rem;
     font-size: 1rem;
-    font-weight: 400;
-    color: var(--white);
+    font-weight: 600;
 }
 .siteTitle {
     color: var(--tertiaryColor);
@@ -35,30 +34,45 @@
     letter-spacing: initial;
 }
 .footer {
+    position: relative;
     margin-top: 2rem;
-    background: var(--white);
+    background: var(--secondaryColor);
+    color: var(--neutralWhite);
     width: 100%;
+    z-index: 2;
 }
 .footerWrapper {
     padding: 3rem 0;
     margin: 0 auto;
-    max-width: 60vw;
+    max-width: 75vw;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 .footer .copyContainer {
-    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.footer .footerBio {
+    margin-left: 40px;
+    max-width: 68%;
+}
+.footerBio p.finePrint {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    opacity: 0.7;
 }
 .footer .portraitContainer {
-    width: 210px;
-    height: 210px;
+    margin-top: 24px;
+    width: 100px;
+    height: 100px;
     border-radius: 100%;
-    border: 2px solid var(--white);
+    /* border: 2px solid var(--neutralWhite); */
 }
 .footer .portrait {
-    width: 210px;
+    width: 100px;
     height: max-content;
     clip-path: circle(50% at 50% 50%);
 }
@@ -76,28 +90,19 @@
     width: 44px;
     height: 44px;
     border-radius: 100%;
-    background: var(--tertiaryColor);
+    background: var(--actionColor);
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 150ms ease-in;
 }
 .socialLinks .iconContainer:hover {
-    background: var(--tertiaryColor-hint);
+    background: var(--primaryColor);
 }
 .socialIcon {
-    color: var(--white);
+    color: var(--primaryColor);
     text-decoration: none; 
 }
 .socialIcon:hover {
-    color: var(--white);
-}
-.copyrightContainer {
-    padding: 3rem 0;
-    border-top: 1px solid var(--grey-2);
-    text-align: center;
-}
-.copyrightContainer p {
-    font-size: .75rem;
-    color: var(--grey-3);
+    color: var(--actionColor);
 }
