@@ -14,7 +14,7 @@ export default () => (
     <div className="section sectionPrimary">
         <div style={{margin: '0 auto', width: '55vw'}}>
             <Header headerText="Active Work-in-Progress"/>
-            <p className="sectionDescription">Pardon my appearance as I migrate my personal portfolio. <Link to="/about">Check out my writing &#10230;</Link></p>
+            <p>Pardon my appearance as I migrate my personal portfolio. <Link to="/writing">Check out my writing &#10230;</Link></p>
         </div>
     </div>
     {/* <div className="section">

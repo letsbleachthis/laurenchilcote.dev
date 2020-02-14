@@ -5,9 +5,9 @@ import Header from "../components/header/header"
 
 export default () => (
   <Layout>
-    <Link to="/">Home</Link>
-    <Header headerText="Contact" />
-    <p>Send me a message!</p>
+    <div className="wrapper">
+      <Header headerText="Writing" />
+    </div>
   </Layout>
 )
 

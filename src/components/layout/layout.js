@@ -35,7 +35,7 @@ export default ({ children }) => {
         </Link>
         <ul className={layoutStyles.mainNavLinks}>
           <ListLink to="/">Work</ListLink>
-          <ListLink to="/">Writing</ListLink>
+          <ListLink to="/writing">Writing</ListLink>
           <ListLink to="/about/">About</ListLink>
         </ul>
       </div>

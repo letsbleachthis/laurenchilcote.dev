@@ -27,6 +27,9 @@
     font-size: 1rem;
     font-weight: 600;
 }
+.mainNavLinks a:active {
+    border-bottom: 2px solid var(--actionColor);
+}
 .siteTitle {
     color: var(--tertiaryColor);
     font-weight: 600;
