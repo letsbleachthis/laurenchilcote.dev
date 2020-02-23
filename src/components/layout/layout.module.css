@@ -4,7 +4,7 @@
     width: 100%;
 }
 .mainNav {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     background: var(--primaryColor);
     width: 100%;
 }
@@ -24,11 +24,12 @@
 }
 .mainNavLinks a {
     margin: 0 1rem;
+    padding-bottom: 0.5rem;
     font-size: 1rem;
     font-weight: 600;
 }
-.mainNavLinks a:active {
-    border-bottom: 2px solid var(--actionColor);
+.mainNavLinks a.active {
+    border-bottom: 3px solid var(--actionColor);
 }
 .siteTitle {
     color: var(--tertiaryColor);
@@ -37,12 +38,8 @@
     letter-spacing: initial;
 }
 .footer {
-    position: relative;
-    margin-top: 2rem;
     background: var(--secondaryColor);
     color: var(--neutralWhite);
-    width: 100%;
-    z-index: 2;
 }
 .footerWrapper {
     padding: 3rem 0;
@@ -69,13 +66,13 @@
 }
 .footer .portraitContainer {
     margin-top: 24px;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 100%;
     /* border: 2px solid var(--neutralWhite); */
 }
 .footer .portrait {
-    width: 100px;
+    width: 120px;
     height: max-content;
     clip-path: circle(50% at 50% 50%);
 }

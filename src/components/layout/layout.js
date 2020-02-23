@@ -10,7 +10,7 @@ import portrait from "../../images/img_lauren_chilcote_crop.jpeg"
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-    <Link to={props.to}>{props.children}</Link>
+    <Link to={props.to} activeClassName={props.activeClassName}>{props.children}</Link>
   </li>
 )
 
@@ -34,9 +34,9 @@ export default ({ children }) => {
           <h3 className={layoutStyles.siteTitle}>{data.site.siteMetadata.title}</h3>
         </Link>
         <ul className={layoutStyles.mainNavLinks}>
-          <ListLink to="/">Work</ListLink>
-          <ListLink to="/writing">Writing</ListLink>
-          <ListLink to="/about/">About</ListLink>
+          <ListLink to="/" activeClassName={layoutStyles.active}>Work</ListLink>
+          <ListLink to="/writing" activeClassName={layoutStyles.active}>Writing</ListLink>
+          <ListLink to="/about/" activeClassName={layoutStyles.active}>About</ListLink>
         </ul>
       </div>
     </header>
